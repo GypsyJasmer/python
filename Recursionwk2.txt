@@ -1,0 +1,54 @@
+*String Reverser
+This function reads a string and returns it in reverse order.  The only string methods you should use are removing 
+the first character and appending a char to a string
+
+*Exponent
+Write a recursive function that takes two arguments, base and exponent.  It then multiplies the base times itself exponent times using recursion
+
+*Palindrome detector
+A palindrome is a string that reads the same forward and backward.  Write a recursive function that takes a string 
+and returns true if it is a palindrome.  The algorithm is to compare the first and last letters, if they match, 
+keep going with the inner string.  If they do not match, return false.  If the string is empty or one character, return true.
+
+*Substrings
+This is a more complex problem, you are to take a string and return all substrings of it.  For example
+
+A -> A
+
+AB -> AB, A, B
+
+ABC -> ABC, AB, AC, BC, B, C
+
+_______________________________________________________________________________________________________________
+
+
+
+#For this lab, any exponent less than 0 should return 1 as its default behavior.
+def pow_rec(base, power):
+    #base case
+    if power<=0:
+        return 1
+    #recursive call
+    return base*pow_rec(base, power-1)
+
+
+
+
+#testers
+print("Expecting return value of 5")
+print(pow_rec(5,1))
+
+print("Expecting return value of 8192")
+print(pow_rec(2,13))
+
+print("Expecting return value of 729")
+print(pow_rec(3,6))
+
+print("Expecting return value of 390625")
+print(pow_rec(5,8))
+
+print("Expecting return value of 1")
+print(pow_rec(27,0))
+
+print("Expecting return value of 1")
+print(pow_rec(13,-1))
