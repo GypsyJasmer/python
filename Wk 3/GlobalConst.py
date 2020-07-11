@@ -1,5 +1,6 @@
 #GLOBAL CONSTANTS
-PLAYER_X='X'
-PLAYER_O='O'
+X='X'
+O='O'
 SPACE=' '
+
 
