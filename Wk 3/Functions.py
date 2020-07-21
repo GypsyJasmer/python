@@ -1,4 +1,7 @@
 # FUNCTIONS
+import GlobalConst as g
+
+
 # displays game instructions, #does not return anything just called in main
 def display_instructions():
     first_play = False
@@ -19,7 +22,11 @@ def display_instructions():
 def display_board(board1):
     print("Here is what the board currently looks like")
     for i in range(len(board1)):
-        print("[" + str(board1[i]) + "]", end="")
+        if board1[i] == g.SPACE:
+            print("[" + str(i + 1) + "]", end="")  # just get the number not space
+        else:
+            print("[" + str(board1[i]) + "]", end="")
+        # not part of the string of logical in the if and else above
         if (i + 1) % 3 == 0:  # this creates a new line every 3 spaces
             print(end="\n")
 
@@ -48,21 +55,21 @@ def check_win(board1):
     win = False
     # row wins
     # 1st row win
-    if ((board1[0] == board1[1] and board1[1] == board1[2] and board1[0] != g.SPACE) or \
+    if ((board1[0] == board1[1] and board1[1] == board1[2] and board1[0] != g.SPACE) or
             # 2nd row win
-            (board1[3] == board1[4] and board1[4] == board1[5] and board1[3] != g.SPACE) or \
+            (board1[3] == board1[4] and board1[4] == board1[5] and board1[3] != g.SPACE) or
             # 3rd row win
-            (board1[6] == board1[7] and board1[7] == board1[8] and board1[6] != g.SPACE) or \
+            (board1[6] == board1[7] and board1[7] == board1[8] and board1[6] != g.SPACE) or
             # column wins
             # 1st col win
-            (board1[0] == board1[3] and board1[3] == board1[6] and board1[0] != g.SPACE) or \
+            (board1[0] == board1[3] and board1[3] == board1[6] and board1[0] != g.SPACE) or
             # 2nd column win
-            (board1[1] == board1[4] and board1[4] == board1[7] and board1[1] != g.SPACE) or \
+            (board1[1] == board1[4] and board1[4] == board1[7] and board1[1] != g.SPACE) or
             # 3rd col win
-            (board1[2] == board1[5] and board1[5] == board1[8] and board1[2] != g.SPACE) or \
+            (board1[2] == board1[5] and board1[5] == board1[8] and board1[2] != g.SPACE) or
             # Diagonal win
             # L to R win
-            (board1[0] == board1[4] and board1[4] == board1[7] and board1[0] != g.SPACE) or \
+            (board1[0] == board1[4] and board1[4] == board1[7] and board1[0] != g.SPACE) or
             # R to L win
             (board1[2] == board1[4] and board1[4] == board1[6] and board1[2] != g.SPACE)):
         win = True
@@ -81,10 +88,10 @@ def check_draw(board1):
 
 def repeat():
     go_again = False
-    answer = 'n'
-    while answer != 'Y' or answer != 'N':
-        answer = input("Do you want to play again? Y for Yes and N for No")
-        answer.upper()
+    answer = ''
+    while answer != 'Y' and answer != 'N':
+        answer = input("Do you want to play again? Y for Yes any other key for No")
+        answer = answer.upper()
         if answer == 'Y':
             go_again = True
     return go_again

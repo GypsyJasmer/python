@@ -4,6 +4,7 @@ from typing import List
 import GlobalConst as g
 from Functions import *
 
+
 # MAIN GAME PLAY
 def main():
     # bool to start the game
@@ -12,16 +13,16 @@ def main():
     while play_again:
         # call display_instructions()
         display_instructions()
-        # initialize board / list
-        board1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        # initialize board / list #list inialization in python
+        board1 = [g.SPACE] * 9
         # # bool
         # win = False
         # tie = False
         # char this sets the player to start at X and will swap to O
         player = g.X
-        start_game = True
+        playing = True
         # repeats while not win or draw
-        while start_game:
+        while playing:
             # call show_board
             display_board(board1)
             # call get_move
@@ -40,12 +41,12 @@ def main():
             # say whether win or draw
             elif winner:
                 print("{0} is the winner! ".format(player))
-                start_game = False
+                playing = False
             elif tie:
                 print("Tie Game no winners!!")
-                start_game = False
+                playing = False
             # ask to play again
-            go_again = repeat()
+        play_again = repeat()
 
 
 if __name__ == "__main__":
