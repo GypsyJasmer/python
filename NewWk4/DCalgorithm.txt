@@ -1,0 +1,57 @@
+Input:
+	usersChoice for map
+	map size default
+Output:
+	traps, cash, player move
+	dungeon
+
+Main:
+	display instructions
+	call userDefined Size(this calls validYesNo)
+	returns usersChoice if they want to make their own size
+		if yes
+			place users input into the map
+		if no
+			place default map in map
+	Call Create Map (this returns the map with all traps, cash, empty, and player.)
+	Calls Get Move
+		if get move can move 
+			updateDungeon
+		else
+			result = win or loose
+			check for a win
+			check for a lose
+	Calls play again if game is won or lost
+	
+	
+	
+	
+	
+
+
+Create Map:
+	sets dungeon/board
+	calls isEmpty to set the	
+		Traps
+		cash
+		player
+	returns the board/displays?
+	
+Get Move:
+	Gets user input for UDLR or Q for quit
+	Validates user input
+	called check inbounds
+	places the player in a new spot/index if it is in bounds. 
+	returns new row & new col
+		
+		
+		if (checkMove(dungeonArray, newRow, newCol))
+        {
+            updateDungeon(dungeonArray, playerRow, playerCol, newRow, newCol);
+
+        }
+        else
+            {
+                result = checkWin(dungeonArray, newRow, newCol);
+                //while statement will be if result = Win or Trap we end the game and repeat.
+            }

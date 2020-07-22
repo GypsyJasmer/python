@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08f98193-0af3-48e5-835b-d49cd7b2ef55" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Wk 3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Wk 3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Self_Eval_Lab_3_162P.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Self_Eval_Lab_3_162P.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wk3.py" beforeDir="false" afterPath="$PROJECT_DIR$/wk3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Wk 4/.idea/Wk 4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Wk 4/.idea/Wk 4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Wk 4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Wk 4/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wk 4/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Wk 4/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Wk 4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Wk 4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wk 4/Dungeon_Functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Wk 4/Dungeon_Functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wk 4/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Wk 4/constant.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Wk 4/wk4lab.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Wk 4/wk4lab.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,9 +108,10 @@
       <screen x="0" y="0" width="1470" height="864" />
     </state>
     <state x="465" y="60" key="#Tester/0.0.1470.864@0.0.1470.864" timestamp="1594435412366" />
-    <state x="192" y="88" width="1086" height="704" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594423646712">
+    <state x="192" y="88" width="1086" height="704" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595446548872">
       <screen x="0" y="0" width="1470" height="864" />
     </state>
+    <state x="192" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1470.864/3840.0.1920.1040@0.0.1470.864" timestamp="1595446548872" />
     <state x="192" y="88" width="1086" height="704" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1470.864@0.0.1470.864" timestamp="1594423646712" />
     <state x="517" y="196" key="FileChooserDialogImpl" timestamp="1595365452682">
       <screen x="0" y="0" width="1470" height="864" />
