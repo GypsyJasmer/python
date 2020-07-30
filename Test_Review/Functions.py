@@ -9,25 +9,30 @@ def displayInstructions():
 
 
 def GetUserChoice():
-    userChoice = ""  # string
-    while userChoice != "R" and userChoice != "P" and userChoice != "S":
-        userChoice = input("Please enter R for Rock, P for Paper, or S for Scissors")
-        userChoice.upper()
-    return userChoice
+    validMove = False
+    while not validMove:
+        userChoice= int(input("What is your choice?: "))
+        if userChoice < c.ROCK or userChoice > c.SCISSORS:
+            print("Please enter rock(1), paper(2) or scissors(3).")
+        else:
+            if userChoice == c.ROCK:
+                print("You chose: Rock\n")
+            elif userChoice == c.PAPER:
+                print("You chose: Paper\n")
+            elif userChoice == c.SCISSORS:
+                print("You chose: Scissors\n")
+            return userChoice
 
 
 def GetComputerChoice():
-    randGen = random.randrange(1, 4)
-    return randGen
-
-
-def DisplayComputerChoice(computerChoice):
+    computerChoice = random.randrange(1, 4)
     if computerChoice == c.ROCK:
-        print("The computer chose ROCK")
+        print("Computer chose: Rock\n")
     elif computerChoice == c.PAPER:
-        print("The computer chose PAPER")
-    else:
-        print("The computer chose SCISSORS")
+        print("Computer chose: Paper\n")
+    elif computerChoice == c.SCISSORS:
+        print("Computer chose: Scissors\n")
+    return computerChoice
 
 
 def DetermineWinner(userChoice, computerChoice):
