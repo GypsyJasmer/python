@@ -1,0 +1,6 @@
+#GLOBAL CONSTANTS
+X='X'
+O='O'
+SPACE=' '
+
+
