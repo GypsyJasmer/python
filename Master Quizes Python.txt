@@ -1,0 +1,133 @@
+MASTER QUIZES
+
+Quiz #1
+Solution to Quiz 1 162P
+Question 1: A named sequence of statements that performs some useful operation is a:
+The correct answer is: function
+Question 2: A parameter is:
+a. a name used in the function definition to refer to a value that will be provided when the function is called
+b. used to create a function that is more flexible since it can respond to its inputs
+c. inside parenthesis after the function name in the header line of the function definition
+d. all of the above
+The correct answer is: all of the above
+Question 3: A statement that creates a new function, specifying its name, parameters and the statements it executes is a:
+The correct answer is: function definition
+Question 4: A statement that executes or invokes a function is a:
+The correct answer is: function call
+Question 5: A variable used inside a function is:
+a. is called a local variable
+b. has a lifetime of the function call. It is created when the function is called and destroyed when the function returns.
+c. can be used by name only within the function. A variable by the same name outside the function is a different variable.
+d. all of the above
+The correct answer is: all of the above
+Question 6: A ______________ is a special variable that is declared on the header line of a function definition and receives a piece of data when a function is called
+The correct answers is: parameter
+Question 7: The first line of a function that shows its name and parameters is known as a
+The correct answer is: header line
+Question 8: A ___________ is a value that is sent into a function when the function is called. This value gets substituted in for the corresponding parameter in the parameter list.
+The correct answer is: argument
+Question 9: You ____________ a function to execute it.
+The correct answer is: call
+Question 10: The body of a function is delimited by
+The correct answer is: the indentation of each line of the body
+
+_________________________________________________________________________________________________________________________________________________________
+
+QUIZ #2
+Solution to Quiz 2 162P
+Question 1: A recursive solution to a problem is always faster and more efficient than an iterative solution.
+The correct answer is: False
+Question 2: A recursive function:
+a. must call itself
+b. must have a base case that does not call itself
+c. each recursive call must "move toward" the base case
+d. must return true or false
+The correct answers are: must call itself, must have a base case that does not call itself, each recursive call must "move toward" the base case
+Question 3: A recursive algorithm is often easier to understand than the equivalent iterative algorithm
+The correct answer is: True
+Question 4: Recursive functions must always have parameters
+The correct answer is: True
+Question 5: It is always possible to rewrite a recursive algorithm as an iterative one.
+The correct answer is: True
+
+
+_________________________________________________________________________________________________________________________________________________________
+
+QUIZ #3
+Question 1: The operator used to assess an individual element in a list is:
+a.	the index operator
+b.	[]
+c.	()
+d.	both choices a and b
+The correct answer is: both choices a and b
+Question 2:  Given the list a = [1, 3, 5]; the following statement will remove 3 from the list:
+The correct answer is: del a[1]
+Is this a good question?  Given how rarely del is used, is this how they would remove the element?  I’m sure there are other ways to do it.  Probably splicing or something
+Question 3: This method can be used to calculate the number of elements in the list l:
+The correct answer is: len(l)
+Question 4: Given the list a = [1, 3, 5], the statement b = a
+The correct answer is: creates an alias called b to the list stored in a. There is just one list with two names.
+Question 5: You can create a copy of list a and store it in list b by executing
+The correct answer is: b = a[:]
+Question 6: If you want to sum up the elements of a list l, you could
+The correct answers are: use a for loop stepping through the elements, use the sum(l) method
+# semi misleading since you have this as a select 1, but also entirely accurate.  Might be better reworded, guessing sum is the answer you initially wanted, perhaps “the built in method to…” or something?
+Question 7: Given list a = [1, 3, 5, 7], the statement b = a[2:] results in
+The correct answer is: [5, 7]
+Question 8: Given the list a [ 1, 3, 5], b = 3 * a results in
+The correct answer is: [1, 3, 5, 1, 3, 5, 1, 3, 5]
+Question 9: Given the two lists a = [1, 3, 5] and b = [2, 4, 6] c = a + b would result in
+The correct answer is: [1, 3, 5, 2, 4, 6]
+Question 10: Given the two lists a = [1, 3, 5] and b = [2, 4, 6], a[1] = b would result in
+The correct answer is: [1, [2, 4, 6], 5]
+_________________________________________________________________________________________________________________________________________________________
+
+QUIZ #4
+
+Solution to Quiz 5 162P
+Question 1: The best choice for validation is:
+A while loop.
+When validating input, you want to keep getting input from the user until they get it right.
+Question 2: You should always validate input before using it throughout your program.
+True
+If you fail to validate input, it may cause your program to function incorrectly.
+Question 3: The best way to program is to use a few functions that each do many things.
+False
+Each function should do one thing and do it well.
+Question 4: A variable must be defined in main before you can use it locally in a function.
+False
+Variables local to a function should be define in that function, unless they are parameters.
+Question 5: In the following function definition, what does size = 4 signify? def area(size = 4):
+The parameter size has a default value of 4. If no argument is provided in a call to this function, the default value will be used.
+Question 6: When you call a function with multiple parameters, it matters what order you provide the values in.
+True
+Arguments are assigned to parameters left to right. The leftmost argument is stored in the leftmost parameter and so forth.
+Question 7: When we want to see if something will work or if it will terminate with an error, we use which of these?
+try/except
+If an exception occurs in the execution of the try block, the code in the except block is performed. If no exception occurs, the except block is skipped.
+Question 8: Python allows you to define some items as constants that can never be changed.
+False
+Python does not have constants; all values are variable and can be changed at will.
+Question 9: When defining some values to be constants in Python, the convention is to (select all that are true).
+a. place them in constant.py
+b. place them at the top of your program
+c. use an uppercase naming convention BIG_NUM
+d. use lower cases, so you are not shouting at the user
+The correct answers are a and c.
+Question 10: Instead of dealing with the hassle of defining parameters in functions and passing them, we should always use global variables.
+False
+You never want to use global variables, their use can contribute to programs that are impossible to debug and maintain.
+
+________________________________________________________________________________________________________________________________________________________
+
+QUIZ #5 LAST QUIZ
+
+1. Two common programming methods are in practice today. The older method is PROCEDUAL and the newer method is OBJECT ORIENTED
+
+2. An object is a software entity that combines both data and PROCEDURES in a single unit.
+
+3.Creating a class object is often called the INSTANTIATION of a class. 
+
+4. Each method or function in a class must include the SELF parameter.
+
+5.When an object is created from a class, the INITIALIZATION method is called. 

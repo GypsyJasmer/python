@@ -3,14 +3,14 @@ import GlobalConst as g
 
 
 # displays game instructions, #does not return anything just called in main
-def display_instructions():
-    first_play = False
+def display_instructions(first_play):
     if not first_play:
         print("We're going to play Tic Tac Toe. This is a 2 player game. \n" +
               "Each player will choose from 1 to 9 to place X or O. Let's get going. \n")
+        return True
     else:
         print("You know how to play Tic Tac Toe, place your X or O Player 1")
-    first_play = True
+
 
 
 # # initializes list to spaces

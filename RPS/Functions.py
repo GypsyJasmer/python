@@ -11,7 +11,7 @@ def displayInstructions():
 def GetUserChoice():
     validMove = False
     while not validMove:
-        userChoice= int(input("What is your choice?: "))
+        userChoice = int(input("Please enter rock(1), paper(2) or scissors(3)."))
         if userChoice < c.ROCK or userChoice > c.SCISSORS:
             print("Please enter rock(1), paper(2) or scissors(3).")
         else:
@@ -21,6 +21,8 @@ def GetUserChoice():
                 print("You chose: Paper\n")
             elif userChoice == c.SCISSORS:
                 print("You chose: Scissors\n")
+            else:
+                print("Not vaild we shouldn't see this")
             return userChoice
 
 
@@ -36,13 +38,13 @@ def GetComputerChoice():
 
 
 def DetermineWinner(userChoice, computerChoice):
-    if ((userChoice == "R" and computerChoice == c.ROCK) or
-            (userChoice == "P" and computerChoice == c.PAPER) or
-            (userChoice == "S" and computerChoice == c.SCISSORS)):
+    if ((userChoice == c.ROCK and computerChoice == c.ROCK) or
+            (userChoice == c.PAPER and computerChoice == c.PAPER) or
+            (userChoice == c.SCISSORS and computerChoice == c.SCISSORS)):
         return c.TIE
-    elif ((userChoice == "R" and computerChoice == c.SCISSORS) or
-          (userChoice == "P" and computerChoice == c.ROCK) or
-          (userChoice == "S" and computerChoice == c.PAPER)):
+    elif ((userChoice == c.ROCK and computerChoice == c.SCISSORS) or
+          (userChoice == c.PAPER and computerChoice == c.ROCK) or
+          (userChoice == c.SCISSORS and computerChoice == c.PAPER)):
         return c.USERWON
     else:
         return c.COMPTUERWON
@@ -57,22 +59,21 @@ def displayWinner(winner):
         print("It's a tie")
 
 
-def IncrementScores(winner, userWins, computerWins):
-    if winner == c.USERWON:
-        userWins = userWins + 1
-    elif winner == c.COMPTUERWON:
-        computerWins = computerWins + 1
+def UserIncrementScores(userWins):
+    return userWins + 1
 
 
-def validYesNo(Input):
-    isValid = False
+def computerIncrementScores(computerWins):
+    return computerWins + 1
+
+
+def validYesNo(user_input):
     userInput = ""
     while userInput != "Y" and userInput != "N":
-        userInput = input(userInput).upper()  # prompt the user for actual input
+        userInput = input(user_input).upper()  # prompt the user for actual input
     if userInput == "Y":
-        isValid = True
-
-    return isValid
+        return True
+    return False
 
 
 def repeat():

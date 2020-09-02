@@ -46,7 +46,6 @@ def main():
             if win:
                 gamePlay = False
             elif lost:
-
                 gamePlay = False
             else:
                 # if true that means there is a space available

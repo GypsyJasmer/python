@@ -170,7 +170,7 @@ def getMove(width, height, playerLocation):
             elif playerMove == c.RIGHT:
                 move = 0, 1
             elif playerMove == c.QUIT:
-                move = -1, -1
+                move = 0, 0
             inbounds = checkBounds(playerLocation, move, width, height)
             if inbounds:
                 validMove = True
@@ -198,7 +198,7 @@ def checkQuit(move):
 def checkBounds(playerLocation, move, width, height):
     inBounds = False
     while not inBounds:
-        # left and up
+    # left and up
         if playerLocation[0] + move[0] < 0 or playerLocation[1] + move[1] < 0 or \
                 playerLocation[0] + move[0] > width - 1 or playerLocation[1] + move[1] > height - 1:
             print("Out of bounds")

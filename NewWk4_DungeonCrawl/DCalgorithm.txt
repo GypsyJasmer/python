@@ -8,18 +8,19 @@ Functions:
 	def placeTrap(dungeonMap, width, height):
 	def placeTreasure(dungeonMap, width, height):
 	def placePlayer(dungeonMap, width, height):
-	def findEmpty(dungeonMap, width, height):
-	def findPlayer(dungeonMap, width, height): Returns row, col 
-	def checkWin(map, move):nothing done in it
-	def checkLose(map, move):nothing done in it
-	def checkQuit(move): nothing done in it
 	
+	def findPlayer(dungeonMap, width, height): Returns row, col 
+
+	def updateMap(dungeonMap, playerLocation, move):
 	def repeat(): pulls validYesNo
 	
 	
 	def getMove(width, height, playerLocation):
+	def findEmpty(dungeonMap, width, height):
 	def checkBounds(dungeonMap,  move):
-	def updateMap(dungeonMap, playerLocation, move):
+	def checkWin(map, move):nothing done in it
+	def checkLose(map, move):nothing done in it
+	def checkQuit(move): nothing done in it
 	
 	
 	

@@ -9,10 +9,11 @@ from Functions import *
 def main():
     # bool to start the game
     play_again = True
+    first_play = False
     # Repeat Play loop until no longer wants to play.
     while play_again:
         # call display_instructions()
-        display_instructions()
+        first_play = display_instructions(first_play)
         # initialize board / list #list inialization in python
         board1 = [g.SPACE] * 9
         # # bool
